@@ -1,0 +1,39 @@
+buildscript {
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://adcolony.bintray.com/AdColony" }
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://plugins.gradle.org/m2/' }
+        maven { url "https://s3-ap-southeast-1.amazonaws.com/godel-release/godel/" }
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.21"
+        classpath 'com.google.gms:google-services:4.3.13'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
+        classpath 'com.google.firebase:perf-plugin:1.4.2'
+    }
+}
+
+ext {
+    ndkVersion = '23.2.8568313'
+    youtubedlAndroidVer = "0.16.0"
+    appCompatVer = '1.1.0'
+    junitVer = '4.12'
+    androidJunitVer = '1.1.1'
+    espressoVer = '3.2.0'
+    jacksonVer = '2.9.8'
+    // supports java 1.6
+    commonsIoVer = '2.5'
+    // supports java 1.6
+    commonsCompressVer = '1.12'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

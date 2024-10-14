@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNavyBlue"
+    android:fillViewport="true"
+    tools:context=".activities.UpiAppsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/custom_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="@dimen/margin_15" />
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:id="@+id/googlePayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actionBar"
+            app:shape_roundRect_bottomLeftRadius="11dp"
+            app:shape_roundRect_bottomRightRadius="11dp"
+            app:shape_roundRect_topLeftRadius="11dp"
+            app:shape_roundRect_topRightRadius="11dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/googlePayConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/subscription_silver"
+                android:paddingBottom="@dimen/_11sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/googlePayTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/for_google_pay"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewRazorPay"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/googlePayUpiIdTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/google_pay_upi_id"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewRazorPay"
+                    app:layout_constraintTop_toBottomOf="@+id/googlePayTextView" />
+
+                <ImageView
+                    android:id="@+id/imageViewRazorPay"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/google_pay"
+                    app:layout_constraintBottom_toBottomOf="@+id/googlePayUpiIdTextView"
+                    app:layout_constraintEnd_toStartOf="@id/googlePayTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/googlePayTextView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:id="@+id/phonePayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/googlePayLayout"
+            app:shape_roundRect_bottomLeftRadius="11dp"
+            app:shape_roundRect_bottomRightRadius="11dp"
+            app:shape_roundRect_topLeftRadius="11dp"
+            app:shape_roundRect_topRightRadius="11dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/phonePayConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/subscription_silver"
+                android:paddingBottom="@dimen/_11sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/phonePayTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/for_phone_pay"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewPhonePay"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/phonePayUpiIdTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/phone_pay_upi_id"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewPhonePay"
+                    app:layout_constraintTop_toBottomOf="@+id/phonePayTextView" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/phonePayUpiIdTwoTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/phone_pay_upi_id_two"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewPhonePay"
+                    app:layout_constraintTop_toBottomOf="@+id/phonePayUpiIdTextView" />
+
+                <ImageView
+                    android:id="@+id/imageViewPhonePay"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_phonepay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/phonePayTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/phonePayTextView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:id="@+id/payTmLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phonePayLayout"
+            app:shape_roundRect_bottomLeftRadius="11dp"
+            app:shape_roundRect_bottomRightRadius="11dp"
+            app:shape_roundRect_topLeftRadius="11dp"
+            app:shape_roundRect_topRightRadius="11dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/payTmConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/subscription_silver"
+                android:paddingBottom="@dimen/_11sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/payTmTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/for_paytm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewPayTm"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/payTmUpiIdTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/paytm_upi_id"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewPayTm"
+                    app:layout_constraintTop_toBottomOf="@+id/payTmTextView" />
+
+                <ImageView
+                    android:id="@+id/imageViewPayTm"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/rounded_corner_white_shape_gradient"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/paytm_upi"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/payTmTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/payTmTextView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPAyment"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="5dp"
+            app:contentPadding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/payTmLayout">
+
+            <RelativeLayout
+                android:id="@+id/rlPAyment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/subscription_golden"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_toStartOf="@+id/btnSingleMovie"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSingleMovie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:padding="5dp"
+                        android:text="VIP Plan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_single2d_movie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Watch single movie for 2"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_single2d_webseries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Watch All Episodes (Each season) for 3 months"
+                        android:textColor="@android:color/black"
+                        android:textSize="14dp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <!--            By Bushra: changed the subscription price from 169 to 229-->
+                <TextView
+                    android:id="@+id/btnSingleMovie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/btn_background_solid_sub"
+                    android:minWidth="60dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="1dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/btnBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/new_button_bg"
+                    android:minWidth="60dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="1dp"
+                    android:text="@string/buy"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:visibility="gone" />
+                <!--        TEST    android:text="Rs. 189"-->
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

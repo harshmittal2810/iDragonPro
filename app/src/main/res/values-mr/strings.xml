@@ -1,0 +1,132 @@
+<resources>
+    <!--Splash -->
+    <string name="get_started"> सुरु करूया</string>
+
+    <!--Home -->
+    <string name="home">होम </string>
+    <string name="search"> शोध </string>
+    <string name="movies">चित्रपट  </string>
+    <string name="help">मदत </string>
+    <string name="profile">प्रोफ़ाइल </string>
+    <string name="web_series"> वेब सीरीज </string>
+    <string name="kids"> लहान मुलान साठी </string>
+    <string name="view_all"> सर्व पहा</string>
+    <string name="language"> भाषा </string>
+    <string name="magic_home"> मैजिक होत आहे कृपया थांबा </string>
+    <string name="update_app"> कृपया ऐप ला नवीन वर्ज़न मधे अपडेट करा </string>
+
+    चित्रपट
+    <string name="watch_List"> वॉचलिस्ट </string>
+    <string name="your_movies"> तुम्हीं पाहिलेले चित्रपट </string>
+    <string name="remaining_time"> उरलेले दिवस </string>
+    <string name="days"> दिवस </string>
+    <string name="expired">समाप्ती </string>
+
+    <!--Profile -->
+    <string name="my_details"> माझे डिटेल्स  </string>
+    <string name="first_name"> प्रथम नाव  </string>
+    <string name="last_name"> शेवटचे नाव  </string>
+    <string name="email"> ईमेल </string>
+    <string name="mobile_number"> मोबाइल नंबर </string>
+    <string name="update"> अपडेट करा  </string>
+    <string name="my_subscription"> माझी सदस्यता </string>
+    <string name="no_active_subscription"> सक्रिय सदस्यता नाही </string>
+    <string name="notifications"> अधिसूचना  </string>
+    <string name="notification_setting"> अधिसूचना सेटिंग्ज़ </string>
+    <string name="on"> चालू-ऑन करा   </string>
+    <string name="off"> बंद-ऑफ़ करा </string>
+    <string name="faq_help"> सतत विचारले जाणारे प्रश्न </string>
+    <string name="privacy_policy"> प्राइवसी पॉलिसी - गोपनीयता अटी  </string>
+    <string name="contact_us"> संपर्क करा  </string>
+    <string name="contact_idragon_team">Idragon  टिम ला संपर्क करा  </string>
+    <string name="email_profile">ईमेल  :</string>
+    <string name="contact">संपर्क करा  :</string>
+    <string name="customer_support"> ग्राहक सहाय्यता:</string>
+    <string name="logout"> लॉग आउट </string>
+
+    <!--Movie Info --> चित्रपटाविषयी माहिती
+    <string name="coming_soon"> लवकरच येत आहे  </string>
+    <string name="play"> प्ले करा </string>
+    <string name="trailer"> ट्रेलर </string>
+    <string name="share"> </string>
+    <string name="directors"> संचालक </string>
+    <string name="cast">कास्ट करा </string>
+    <string name="episodes"> एपिसोड </string>
+    <string name="episode"> एपिसोड </string>
+    <string name="reviews_demands"> रिवीव डिमांड  </string>
+    <string name="write_a_review_demand"> रिवीव डिमांड लिहा  </string>
+    <string name="submit"> सबमिट करा  </string>
+    <string name="please_enter_valid_review"> कृपया वैध रिवीव प्रविष्ट करा</string>
+    <string name="movie_coming_soon"> हा चित्रपट लवकरच येणार आहे </string>
+    <string name="ok"> ठीक आहे  </string>
+    <string name="sorry">माफ करा  "</string>
+    <string name="not_available"> आपल्या क्षेत्रात सध्या उपलब्ध नाही</string>
+    <string name="loading_movie"> चित्रपट लोड होत आहे कृपया प्रतीक्षा करावी </string>
+    <string name="now"> आताच </string>
+    <string name="review_added"> रिवीव यशस्वीरित्या जोडले गेले आहे </string>
+    <string name="failed"> अयशस्वी </string>
+    <string name="added_to_watchlist"> आपल्या वॉचलिस्टमध्ये जोडले गेले आहे </string>
+    <string name="already_in_watchlist"> आधीपासून आपल्या वॉचलिस्टमध्ये आहे </string>
+    <string name="add_to_watch"> बघण्याच्या यादीत टाका.</string>
+    <string name="hey_watch"> अहो पहा "</string>
+    <string name="check_out_idragon">. Idragon न्यू मूवीज ऐप पहा! \n</string>
+    <string name="up_next">पुढे</string>
+    <string name="track_selection_title"> क्वालिटी </string>
+
+    <!--Subscription -->
+    <string name="membership_plans"> सदस्यता योजना </string>
+    <string name="one_month">एक महिना किंवा इतर योजनेसाठी कॉल करा<b>9769712467</b></string>
+
+    <!--Payment -->
+    <string name="razorpay"> ऑनलाईन पेमेंट </string>
+    <string name="cash_details_text"><b> कृपया लक्ष द्या:-</b>\n<b> पेमेंट नंतर </b>  कृपया खालील तपशील पाठवा:\n आम्हाला तुमचा नंबर, पेमेंट पावती पाठवा \n<b> इमेल आयडी </b> - idragonglobal@gmail.com <b>या </b> \n<b> WhatsApp on</b>: 9819325845 </string>
+    <string name="cash_payment_content">2  या खात्यात पेमेंट पाठवा </string>
+    <string name="cash_payment_content1"><b> खाता क्रमांक </b> - 003805006163\n<b>आय-एफ-एस-सी कोड </b> - ICIC0000038\n<b>एम-आय-सी-आर-कोड </b> - 400229012</string>
+    <string name="cash_payment_qr_code">3. Pay Using QR CODE / कोडद्वारे पेमेंट करा </string>
+    <string name="payment_new">1.   आपण आम्हाला गूगल पे , फोनपे, आणि पेटीएम वर पेमेंट करु शकता </string>
+    <string name="payment_mobile_hindi"> खाली दिलेल्या क्रमांकावर पेमेंट करा </string>
+    <string name="payment_number">९७६९७१२४६७</string>
+
+    <!--Login -->
+    <string name="login_failed"> लॉगिन अयशस्वी </string>
+    <string name="mobile_number_10"> दहा अंकी मोबाइल नंबर </string>
+    <string name="login"> लॉगिन वर क्लिक करा </string>
+
+    <!--Register -->
+    <string name="vip_member_login_n"><b> व्हीआयपी सदस्य लॉगिन </b> \n आपण आधीपासून नोंदणीकृत असल्यास व्हीआयपी लॉग इन करा </string>
+    <string name="register_n"> रजिस्टर करा </string>
+    <string name="please_enter_correct_mobile_number_n10"> दहा अंकी मोबाइल नंबर प्रविष्ट करा </string>
+    <string name="register"> रजिस्टर करा </string>
+
+    <!--Others -->
+    <string name="or">किंवा</string>
+    <string name="expires_today">आज संपेल</string>
+    <string name="multi_login">आपण एकाधिक डिव्हाइसमधून लॉगिन केले आहे. कृपया प्रशासकाशी संपर्क साधा.</string>
+    <string name="premium_content_block">आपण इतर डिव्‍हाइसेस वरून प्रीमियम सामग्री पहात आहात. आपल्‍याला समस्‍या येत असल्यास तर डिव्‍हाइसेस वरून लॉगआउट करा.</string>
+    <string name="welcome">स्वागत आहे</string>
+    <string name="select_language">भाषा निवडा</string>
+    <string name="continue_lan">सुरू</string>
+    <string name="more_details">अधिक माहितीसाठी</string>
+    <string name="don_t_have_an_account">आपल्याकडे खाते नाही?</string>
+    <string name="sign_up_register">साइन अप / नोंदणी करा</string>
+    <string name="enter_mobile_number">तुमचा योग्य नंबर निवडा किंवा तुमचा दुसरा नंबर टाका</string>
+    <string name="gener">शैली</string>
+    <string name="edit">सुधारणे</string>
+    <string name="click_here_to_vip_login">व्हीआयपी लॉगिन करण्यासाठी येथे क्लिक करा</string>
+    <string name="upload_profile">प्रोफाइल अपलोड करा</string>
+    <string name="my_subscriptions">माझी योजना</string>
+    <string name="vaild_till">पर्यंत वैध</string>
+    <string name="help_faq">मदत &amp; विद्युतप्रवाह मोजण्याच्या एककाचे संक्षिप्त रुप; वारंवार विचारले जाणारे प्रश्न</string>
+    <string name="change">बदला</string>
+    <string name="update_available">अपडेट उपलब्ध</string>
+    <string name="view_more">अधिक प i हा</string>
+    <string name="buy">खरेदी करा</string>
+    <string name="video_playing">व्हिडिओ आधीच प्ले होत आहे</string>
+    <string name="adding_review">पुनरावलोकन जोडत आहे</string>
+
+
+    <!--New -->
+    <string name="movie_subscriptions">मूवी सदस्यता</string>
+    <string name="web_subscriptions">वेब सीरीज सदस्यता </string>
+    <string name="data_msg"> तुमचा व्हिडिओ मोबाइल डेटा वापरून प्ले होत आहे. सेटिंग्जमध्ये प्रवाहाची गुणवत्ता आणि डेटा वापराची मात्रा समायोजित करा.</string>
+</resources>

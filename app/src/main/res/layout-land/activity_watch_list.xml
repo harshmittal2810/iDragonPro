@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNavyBlue"
+    tools:context=".activities.WatchList">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="18dp"
+        android:layout_height="12dp"
+        android:layout_alignTop="@+id/imgLogoHead"
+        android:layout_alignBottom="@+id/imgLogoHead"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/back_new" />
+
+    <ImageView
+        android:id="@+id/imgLogoHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogoHead"
+        android:background="@color/colorNavyBlue"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        app:tabTextColor="@color/colorWhite" />
+
+    <com.idragonpro.andmagnus.helpers.NonSwipeableViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"
+        android:background="@color/colorNavyBlue"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<resources><!--Splash -->
+    <string name="get_started">शुरू हो जाओ</string>
+    <!--Home -->
+    <string name="home">होम</string>
+    <string name="search">खोज</string>
+    <string name="movies">मूवीज़</string>
+    <string name="help">मदत</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="web_series">वेब सीरीज</string>
+    <string name="kids">बच्चों के लिए</string>
+    <string name="view_all">सभी देखो</string>
+    <string name="language">भाषा</string>
+    <string name="magic_home">मैजिक  हो रहा है। कृपया प्रतीक्षा करें</string>
+    <string name="update_app">कृपया ऐप को नए वर्ज़न में अपडेट करें</string>
+    <!--Movies -->
+    <string name="watch_List">वॉचलिस्ट</string>
+    <string name="your_movies">आपकी चुनी हुई मूवीज़</string>
+    <string name="remaining_time">बचे हुए दिन</string>
+    <string name="days">दिन</string>
+    <string name="expired">समाप्ती</string>
+    <!--Profile -->
+    <string name="my_details">मेरे डिटेल्ज़</string>
+    <string name="first_name">प्रथम नाम</string>
+    <string name="last_name">आख़री नाम</string>
+    <string name="email">ईमेल</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="update">अपडेट करें</string>
+    <string name="my_subscription">मेरी सदस्यता</string>
+    <string name="no_active_subscription">कोई सक्रिय सदस्यता नहीं</string>
+    <string name="notifications">सूचनाए </string>
+    <string name="notification_setting">सूचनाए  सेटिंग्ज़ </string>
+    <string name="on">चालू-ऑन  </string>
+    <string name="off">बंद-ऑफ़ </string>
+    <string name="faq_help">अक्सर पूछे जाने वाले प्रश्न- फएक्यूँ  /सहायता</string>
+    <string name="privacy_policy">प्राइवसी पॉलिसी - गोपनीयता नीति</string>
+    <string name="contact_us">संपर्क करें</string>
+    <string name="contact_idragon_team">आड्रागन टिम से संपर्क करें</string>
+    <string name="email_profile">ईमेल  :</string>
+    <string name="contact">संपर्क :</string>
+    <string name="customer_support">ग्राहक सहयोग :</string>
+    <string name="logout">लॉग आउट</string>
+    <!--Movie Info -->
+    <string name="coming_soon">जल्द ही आएगा</string>
+    <string name="play">चलाएं/ प्ले</string>
+    <string name="trailer">ट्रेलर</string>
+    <string name="share">Share</string>
+    <string name="directors">निदेशक</string>
+    <string name="cast">कास्ट करें</string>
+    <string name="episodes">एपिसोड</string>
+    <string name="episode">एपिसोड</string>
+    <string name="reviews_demands">रिवीव  की डिमांड </string>
+    <string name="write_a_review_demand">रिवीव डिमांड  लिखें</string>
+    <string name="submit">सबमिट कीजिए </string>
+    <string name="please_enter_valid_review">कृपया मान्य रिवीव दर्ज करें</string>
+    <string name="movie_coming_soon">यह फिल्म जल्द ही आ रही है</string>
+    <string name="ok">ठीक है</string>
+    <string name="sorry">माफ़ कीजिए "</string>
+    <string name="not_available">वर्तमान में आपके क्षेत्र में उपलब्ध नहीं है</string>
+    <string name="loading_movie">मूवी लोड हो रही है, कृपया प्रतीक्षा करें।</string>
+    <string name="now">अब</string>
+    <string name="review_added">रिवीव  सफलतापूर्वक जोड़ी गई है</string>
+    <string name="failed">असफल हुआ</string>
+    <string name="added_to_watchlist">आपके वॉचलिस्ट में जोड़ा गया है </string>
+    <string name="already_in_watchlist">पहले से ही आपके वॉचलिस्ट में है</string>
+    <string name="add_to_watch">देखे जाने की सूची में जोड़ें.</string>
+    <string name="hey_watch">अरे मैं देख रहा हूँ "</string>
+    <string name="check_out_idragon">. आड्रैगन न्यू मूवीज ऐप पर इसे अभी देखें! \n</string>
+    <string name="up_next">अगला</string>
+    <string name="track_selection_title">क्वालिटी</string>
+    <!--Subscription -->
+    <string name="membership_plans">सदस्यता योजनाएं / मेंबरशिप प्लान</string>
+    <string name="one_month">एक महीने के या अन्य प्लान के लिए फ़ोन कीजिए<b>9769712467</b></string>
+    <!--Payment -->
+    <string name="razorpay">ओनलाइन पेमेंट</string>
+    <string name="cash_details_text"><b>कृपया ध्यान दें:-</b>\n<b>पेमेंट के बाद</b>कृपया नीचे दिए गए डीटेंल्स पर भेजें :\n आपका नंबर, पेमेंट रसीद हमें भेजें\n<b>इमेल आयडी</b>- idragonglobal@gmail.com<b>या</b>\n<b>WhatsApp on</b>: 9819325845</string>
+    <string name="cash_payment_content">2।  इस खाते में पेमेंट करें</string>
+    <string name="cash_payment_content1"><b>खाता क्रमांक</b>- 003805006163\n<b>आएफएससी कोड</b>- ICIC0000038\n<b>एमआयसीआर कोड</b>- 400229012</string>
+    <string name="cash_payment_qr_code">3. Pay Using QR CODE / कोड के द्वारा पेमेंट कीजिए</string>
+    <string name="payment_new">1.   आप हमें गूगल पे, फ़ोन पे, पेटिम पे पेमेंट कीजिए</string>
+    <string name="payment_mobile_hindi">इस नंबर पर पेमेंट करें</string>
+    <string name="payment_number">9769712467</string>
+    <!--Login -->
+    <string name="login_failed">लॉगिन असफ़ल</string>
+    <string name="mobile_number_10">दस अंक का मोबाईल नंबर</string>
+    <string name="login">लॉगिन पे क्लिक करे</string>
+    <!--Register -->
+    <string name="vip_member_login_n"><b>वीआईपी सदस्य लॉगिन</b>\n अगर आप पहले से रजिस्टर है तो वीआईपी लॉगिन कीजिए</string>
+    <string name="register_n">रजिस्टर करें</string>
+    <string name="please_enter_correct_mobile_number_n10">दस अंक मोबाइल नंबर दर्ज कीजिये</string>
+    <string name="register">रजिस्टर करें</string>
+    <!--Others -->
+    <string name="or">या</string>
+    <string name="expires_today">आज समाप्त हो रहा है</string>
+    <string name="multi_login">आप एक से अधिक डिवाइस से लॉग इन कर रहे हैं। कृपया एडमिन से संपर्क करें।</string>
+    <string name="premium_content_block">आप अन्य डिवाइस से प्रीमियम सामग्री देख रहे हैं। यदि आप समस्याओं का सामना कर रहे हैं तो अन्य डिवाइस से लॉगआउट करें।</string>
+    <string name="welcome">स्वागत है</string>
+    <string name="select_language">भाषा चुनें</string>
+    <string name="continue_lan">जारी रखें</string>
+    <string name="more_details">अधिक विवरण</string>
+    <string name="don_t_have_an_account">क्या आपका कोई खाता नहीं है?</string>
+    <string name="sign_up_register">साइन अप/रजिस्टर करें</string>
+    <string name="enter_mobile_number">अपना 10 अंकों का मोबाइल नंबर दर्ज करें बिना contry code के</string>
+    <string name="gener">पीढ़ी</string>
+    <string name="edit">संपादित करें</string>
+    <string name="click_here_to_vip_login">वीआईपी लॉग इन करने के लिए यहां क्लिक करें</string>
+    <string name="upload_profile">प्रोफ़ाइल अपलोड करें</string>
+    <string name="my_subscriptions">मेरी योजना</string>
+    <string name="vaild_till">तक मान्य है</string>
+    <string name="help_faq">सहायता &amp; amp; पूछे जाने वाले प्रश्न</string>
+    <string name="change">परिवर्तन</string>
+    <string name="update_available">अपडेट उपलब्ध</string>
+    <string name="view_more">और देखो</string>
+    <string name="buy">खरीदें</string>
+    <string name="video_playing">वीडियो पहले से चल रहा है</string>
+    <string name="adding_review">समीक्षा जोड़ना</string>
+
+    <!--New -->
+    <string name="movie_subscriptions">मूवी सदस्यता</string>
+    <string name="web_subscriptions">वेब सीरीज सदस्यता </string>
+    <string name="data_msg">आपका वीडियो मोबाइल डेटा का उपयोग करके चल रहा है। \n सेटिंग में स्ट्रीमिंग गुणवत्ता और डेटा उपयोग की मात्रा को समायोजित करें.</string>
+    <string name="internet_download_alert">डाउनलोड शुरू होने के बाद इंटरनेट बंद न करें, यदि इंटरनेट बंद हो गया तो कृपया फ़ाइल हटा(x) दें और पुनः डाउनलोड करें</string>
+    <string name="upi_payment">(यूपीआई भुगतान)</string>
+    <string name="qr_scanner_click_here">QR Scanner यहां क्लिक करें</string>
+    <string name="bank_qr_scanner_click_here">Bank QR Scanner यहां क्लिक करें</string>
+    <string name="for_google_pay">Google pay के लिए</string>
+    <string name="for_phone_pay">PhonePe के लिए</string>
+    <string name="for_paytm">Paytm  के लिए</string>
+    <string name="phone_pay_upi_id">9987714307@axl</string>
+    <string name="phone_pay_upi_id_two">9987714307@ybl</string>
+    <string name="paytm_upi_id">9987714307@paytm</string>
+    <string name="customer_care_no">ग्राहक देखभाल नंबर  - 9321199867</string>
+    <string name="google_pay_upi_id">idragonmoviesapp@okicici</string>
+    <string name="pakistan_nepal_bangladesh_user_click_hi">पाकिस्तान, नेपाल और बांग्लादेश उपयोगकर्ता भुगतान के लिए यहां क्लिक करें</string>
+    <string name="pakistan_nepal_bangladesh_user_click">पाकिस्तान, नेपाल और बांग्लादेश उपयोगकर्ता भुगतान के लिए यहां क्लिक करें</string>
+    <string name="pay_on">Pay on :- 9987714307 इस नम्बर पर UPI से पेमेंट करे</string>
+    <string name="account_transfer">Account Transfer/खाते में जमा करे</string>
+    <string name="instamojo_payment">इंस्तामोजो पेमंट</string>
+    <string name="instamojo_payment_hi">इंस्तामोजो पेमंट</string>
+    <string name="qr_scanner_click_here_hi">क्यूआर स्कैनर</string>
+    <string name="indian_international_payment_hi">(भारतीय &amp; अंतरराष्ट्रीय)</string>
+    <string name="indian_international_payment">(भारतीय &amp; अंतरराष्ट्रीय)</string>
+    <string name="upi_payment_hi">(यूपीआई भुगतान)</string>
+    <string name="account_number">खाता संख्या - 5345240494</string>
+    <string name="ifsc_code">IFSC कोड - KKBK0000962</string>
+    <string name="micr_code">MICR कोड - 400485017</string>
+    <string name="account_name">खाते का नाम - एयॉन पिक्चर्स</string>
+    <string name="email_id">Email ID - idragomglobal@gmail.com</string>
+
+
+</resources>

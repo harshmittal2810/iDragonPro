@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_background"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ivWelcome"
+            android:layout_below="@+id/ivLogo"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvSkip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/religion" />
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/signInButton"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/lato"
+            android:gravity="center_horizontal"
+            android:text="@string/click_here_to_login_n"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/native_ad_holder"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/new_button_bg"
+            android:drawableStart="@drawable/google_new"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/lato"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="10dp"
+            android:text="@string/get_started"
+            android:textColor="@color/black" />
+
+        <FrameLayout
+            android:id="@+id/native_ad_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_8sdp" />
+
+    </RelativeLayout>
+</ScrollView>

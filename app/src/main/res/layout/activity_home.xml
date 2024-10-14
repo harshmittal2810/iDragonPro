@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="view"
+            type="com.idragonpro.andmagnus.activities.Home" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorNavyBlue"
+        tools:context=".activities.Home">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/footer_layout"
+            android:layout_centerInParent="true"
+            android:padding="150dp"
+            android:visibility="gone" />
+
+        <com.idragonpro.andmagnus.helpers.NonSwipeableViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorNavyBlue"
+            android:visibility="gone"
+            android:layout_above="@+id/footer_layout"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <include
+            android:id="@+id/llActionBar"
+            layout="@layout/custom_actionbar_new" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llActionBar"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+            app:tabPadding="2dp" />
+
+        <include layout="@layout/footer" />
+
+    </RelativeLayout>
+
+</layout>
+
+

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Splash -->
+    <string name="get_started">அச்சகம்</string>
+
+    <!--Home -->
+    <string name="home">வீடு</string>
+    <string name="search">தேடல்</string>
+    <string name="movies">திரைப்படங்கள்</string>
+    <string name="help">உதவி</string>
+    <string name="profile">சுயவிவரம்</string>
+    <string name="web_series">வலைத் தொடர்</string>
+    <string name="kids">குழந்தைகள்</string>
+    <string name="view_all">அனைத்தையும் காட்டு</string>
+    <string name="language">மொழி</string>
+    <string name="magic_home">மேஜிக் நடக்கிறது. தயவுசெய்து காத்திருங்கள் ...</string>
+    <string name="update_app">பயன்பாட்டை புதிய பதிப்பிற்கு புதுப்பிக்கவும்</string>
+
+    <!--Movies -->
+    <string name="watch_List">கண்காணிப்பு பட்டியல்</string>
+    <string name="your_movies">உங்கள் திரைப்படங்கள்</string>
+    <string name="remaining_time">மீதமுள்ள நேரம்</string>
+    <string name="days">நாட்களில்</string>
+    <string name="expired">காலாவதியான</string>
+
+    <!--Profile -->
+    <string name="my_details">எனது விவரங்கள்</string>
+    <string name="first_name">முதல் பெயர்</string>
+    <string name="last_name">கடைசி பெயர்</string>
+    <string name="email">மின்னஞ்சல்</string>
+    <string name="mobile_number">கைபேசி எண்</string>
+    <string name="update">புதுப்பிப்பு</string>
+    <string name="my_subscription">எனது சந்தா</string>
+    <string name="no_active_subscription">செயலில் சந்தா இல்லை</string>
+    <string name="notifications">அறிவிப்புகள்</string>
+    <string name="notification_setting">அறிவிப்பு அமைப்புகள்</string>
+    <string name="on">வேலை</string>
+    <string name="off">ஆஃப்</string>
+    <string name="faq_help">அடிக்கடி கேட்கப்படும் கேள்விகள்/உதவி</string>
+    <string name="privacy_policy">தனியுரிமை கொள்கை</string>
+    <string name="contact_us">எங்களை தொடர்பு கொள்ள</string>
+    <string name="contact_idragon_team">இட்ராகன் குழுவைத் தொடர்பு கொள்ளுங்கள்</string>
+    <string name="email_profile">மின்னஞ்சல் :</string>
+    <string name="contact">தொடர்புகள் :</string>
+    <string name="customer_support">வாடிக்கையாளர் ஆதரவு :</string>
+    <string name="logout">விடு பதிகை</string>
+
+    <!--Movie Info -->
+    <string name="coming_soon">விரைவில்</string>
+    <string name="play">விளையாடு</string>
+    <string name="trailer">டிரெய்லர்</string>
+    <string name="share">பகிர்</string>
+    <string name="directors">Directors</string>
+    <string name="cast">நடிகர்கள்</string>
+    <string name="episodes">அத்தியாயங்கள்</string>
+    <string name="episode">அத்தியாயம்</string>
+    <string name="reviews_demands">விமர்சனங்கள்/கோரிக்கைகள்</string>
+    <string name="write_a_review_demand">ஒரு விமர்சனம் எழுத/தேவை</string>
+    <string name="submit">சமர்ப்பிக்கவும்</string>
+    <string name="please_enter_valid_review">சரியான மதிப்பாய்வை உள்ளிடவும்</string>
+    <string name="movie_coming_soon">இந்த படம் விரைவில் வருகிறது</string>
+    <string name="ok">சரி</string>
+    <string name="sorry">\"மன்னிக்கவும் \"</string>
+    <string name="not_available">\" தற்போது உங்கள் பிராந்தியத்தில் கிடைக்கவில்லை\"</string>
+    <string name="loading_movie">திரைப்படத்தை ஏற்றுகிறது, தயவுசெய்து காத்திருங்கள்.</string>
+    <string name="now">இப்போது</string>
+    <string name="review_added">விமர்சனம் வெற்றிகரமாக சேர்க்கப்பட்டது</string>
+    <string name="failed">தோல்வி</string>
+    <string name="added_to_watchlist">கண்காணிப்பு பட்டியலில் சேர்க்கப்பட்டது</string>
+    <string name="already_in_watchlist">ஏற்கனவே கண்காணிப்பு பட்டியலில் உள்ளது</string>
+    <string name="add_to_watch">கண்காணிப்பு பட்டியலில் சேர்க்க…</string>
+    <string name="hey_watch">\"ஏய் நான் பார்த்துக் கொண்டிருக்கிறேன் \"</string>
+    <string name="check_out_idragon">. ஐட்ராகன் புதிய மூவிஸ் பயன்பாட்டில் இப்போது பாருங்கள்!\n</string>
+    <string name="up_next">அடுத்து</string>
+    <string name="track_selection_title">தரம் / गुणवत्ता</string>
+
+    <!--Subscription -->
+    <string name="membership_plans">உறுப்பினர் திட்டங்கள்</string>
+    <string name="one_month">1 Month या अन्य Plan के लिए call <b>9769712467</b></string>
+
+    <!--Payment -->
+    <string name="razorpay">ஆன்லைன் கட்டணம்</string>
+    <string name="cash_details_text"><b> PLEASE NOTE:-</b>\n<b> பணம் செலுத்திய பிறகு</b> கீழே விவரங்களை அனுப்பவும் :\n(पेमेंट के बाद आपका नंबर, पेमेंट Receipt भेजें)\n<b> Email ID</b> - idragonglobal@gmail.com <b>OR</b> \n<b> WhatsApp on</b>: 9819325845 </string>
+    <string name="cash_payment_content">2. A / C விவரங்களுக்கு கீழே வைப்புத்தொகை செலுத்துதல் விவரங்கள் :. N.    इस खाते में पेमेंट करें</string>
+    <string name="cash_payment_content1"><b>கணக்கு எண்</b> - 003805006163\n<b>IFSC Code</b> - ICIC0000038\n<b>MICR Code</b> - 400229012</string>
+    <string name="cash_payment_qr_code">3. QR குறியீட்டைப் பயன்படுத்தி பணம் செலுத்துங்கள்</string>
+    <string name="payment_new">1.   Pay on Google Pay, PhonePe , Paytm on </string>
+    <string name="payment_mobile_hindi">इस नंबर पर पेमेंट करें</string>
+    <string name="payment_number">9769712467</string>
+
+    <!--Login -->
+    <string name="login_failed">உள்நுழைவு தோல்வியுற்றது</string>
+    <string name="mobile_number_10">கைபேசி எண்</string>
+    <string name="login">உள்நுழைய</string>
+
+    <!--Register -->
+    <string name="vip_member_login_n"><b>VIP MEMBER LOGIN</b> \n अगर आप पहले से रजिस्टर है तो वीआईपी लॉगिन कीजिए</string>
+    <string name="register_n">Register\nरजिस्टर करें</string>
+    <string name="please_enter_correct_mobile_number_n10">சரியான மொபைல் எண்ணை உள்ளிடவும்\n10 अंक मोबाइल नंबर दर्ज कीजिये</string>
+    <string name="register">Register / दबाए</string>
+
+
+    <!--Others -->
+    <string name="or">அல்லது</string>
+    <string name="expires_today">இன்று காலாவதியாகிறது</string>
+    <string name="multi_login">நீங்கள் பல சாதனங்களிலிருந்து உள்நுழைந்துள்ளீர்கள். தயவுசெய்து தொடர்பு நிர்வாகி.</string>
+    <string name="premium_content_block">நீங்கள் பிற சாதனங்களிலிருந்து பிரீமியம் உள்ளடக்கத்தைப் பார்க்கிறீர்கள். நீங்கள் சிக்கல்களை எதிர்கொண்டால் பிற சாதனங்களிலிருந்து வெளியேறவும்.</string>
+    <string name="welcome">வரவேற்பு</string>
+    <string name="select_language">மொழியை தேர்ந்தெடுங்கள்</string>
+    <string name="continue_lan">தொடரவும்</string>
+    <string name="more_details">கூடுதல் தகவல்கள்</string>
+    <string name="don_t_have_an_account">கணக்கு வைத்திருக்கவில்லையா?</string>
+    <string name="sign_up_register">பதிவுபெறு/பதிவுசெய்க</string>
+    <string name="enter_mobile_number">உங்கள் சரியான எண்ணைத் தேர்ந்தெடுக்கவும் அல்லது</string>
+    <string name="gener">ஜெனர்கள்</string>
+    <string name="edit">தொகு</string>
+    <string name="click_here_to_vip_login">விஐபி உள்நுழைவுக்கு இங்கே கிளிக் செய்யவும்</string>
+    <string name="upload_profile">சுயவிவரத்தைப் பதிவேற்றவும்</string>
+    <string name="my_subscriptions">எனது சந்தாக்கள்</string>
+    <string name="vaild_till">வைல்ட் டில்</string>
+    <string name="help_faq">உதவி &amp; ஆம்ப்; அடிக்கடி கேட்கப்படும் கேள்விகள்</string>
+    <string name="change">மாற்றம்</string>
+    <string name="update_available">புதுப்பிப்பு கிடைக்கிறது</string>
+    <string name="view_more">மேலும் பார்க்க</string>
+    <string name="buy">வாங்க</string>
+    <string name="video_playing">வீடியோ ஏற்கனவே இயங்குகிறது</string>
+    <string name="adding_review">மதிப்பாய்வைச் சேர்க்கிறது</string>
+
+    <!--New -->
+    <string name="movie_subscriptions">திரைப்பட சந்தா </string>
+    <string name="web_subscriptions">வெப்சரீஸ் சந்தா </string>
+    <string name="data_msg"> மொபைல் தரவைப் பயன்படுத்தி உங்கள் வீடியோ இயங்குகிறது. \ மற்றும் அமைப்புகளில் ஸ்ட்ரீமிங் தரம் மற்றும் தரவு பயன்பாட்டின் அளவை சரிசெய்யவும் .</string>
+</resources>

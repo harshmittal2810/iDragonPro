@@ -1,0 +1,255 @@
+<resources>
+    <!--Splash -->
+    <string name="get_started">Enter</string>
+
+    <!--Home -->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="movies">Movies</string>
+    <string name="help">Help</string>
+    <string name="profile">Profile</string>
+    <string name="web_series">Web Series</string>
+    <string name="kids">Kids</string>
+    <string name="view_all">View ALL</string>
+    <string name="language">Language</string>
+    <string name="magic_home">Magic is happening.Please Wait…</string>
+    <string name="update_app">Please update the app to newer version</string>
+    <string name="please_wait" translatable="false">Please Wait...</string>
+
+    <!--Movies -->
+    <string name="watch_List">Watch List</string>
+    <string name="your_movies">Your Movies</string>
+    <string name="remaining_time">Remaining Time</string>
+    <string name="days">Days</string>
+    <string name="expired">Expired</string>
+
+    <!--Profile -->
+    <string name="my_details">My Details</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="update">Update</string>
+    <string name="my_subscription">My Subscription</string>
+    <string name="no_active_subscription">No Active Subscription</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification_setting">Notification Setting</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="faq_help">FAQ/Help</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="contact_idragon_team">Contact Idragon Team</string>
+    <string name="email_profile">Email :</string>
+    <string name="contact">Contact :</string>
+    <string name="customer_support">Customer Support :</string>
+    <string name="logout">Logout</string>
+
+    <!--Movie Info -->
+    <string name="coming_soon">Coming soon</string>
+    <string name="play">Play</string>
+    <string name="trailer">Trailer</string>
+    <string name="share">Share</string>
+    <string name="directors">Directors</string>
+    <string name="cast">Cast</string>
+    <string name="episodes">Episodes</string>
+    <string name="episode">Episode</string>
+    <string name="reviews_demands">Reviews/Demands</string>
+    <string name="write_a_review_demand">Write a Review/Demand</string>
+    <string name="submit">Submit</string>
+    <string name="please_enter_valid_review">Please enter valid review</string>
+    <string name="movie_coming_soon">This movie is coming soon</string>
+    <string name="ok">OK</string>
+    <string name="sorry">\"Sorry \"</string>
+    <string name="not_available">\" is currently not available in your region\"</string>
+    <string name="loading_movie">Loading Movie, please wait.</string>
+    <string name="now">NOW</string>
+    <string name="review_added">Review added successfully</string>
+    <string name="failed">Failed</string>
+    <string name="added_to_watchlist">Added To WatchList</string>
+    <string name="already_in_watchlist">Already In WatchList</string>
+    <string name="add_to_watch">Add to Watchlist…</string>
+    <string name="hey_watch">\"Hey I’m watching \"</string>
+    <string name="check_out_idragon">. Check it out now on iDragon New Movies App!\n</string>
+    <string name="up_next">Up Next</string>
+    <string name="track_selection_title">Quality</string>
+
+    <!--Subscription -->
+    <string name="membership_plans">Membership Plans</string>
+    <string name="one_month">For 1 Month Plan call <b>9769712467</b></string>
+
+    <!--Payment -->
+    <string name="razorpay">Online Payment</string>
+    <string name="cash_details_text"><b> PLEASE NOTE:-</b>\n<b> After Payment</b>  please send below details on :\n(पेमेंट के बाद आपका नंबर, पेमेंट Receipt भेजें)\n<b> Email ID</b> - idragonglobal@gmail.com <b>OR</b> \n<b> WhatsApp on</b>: 9987714307 </string>
+    <string name="cash_payment_content">2.  Deposit Cash Payment in below A/C Details:\n    इस खाते में पेमेंट करें</string>
+    <string name="cash_payment_content1"><b>Account Number</b> - 5345240494\n<b>IFSC Code</b> - KKBK0000962\n<b>MICR Code</b> - 400485017</string>
+    <string name="cash_payment_qr_code">3. Pay Using QR CODE</string>
+    <string name="payment_new">1.   Pay on Google Pay, PhonePe , Paytm on </string>
+    <string name="payment_mobile_hindi">इस नंबर पर पेमेंट करें</string>
+    <string name="payment_number">9987714307</string>
+
+    <!--Login -->
+    <string name="login_failed">Login Failed</string>
+    <string name="mobile_number_10">Mobile Number (10)</string>
+    <string name="login">Login</string>
+
+    <!--Register -->
+    <string name="vip_member_login_n"><b>VIP MEMBER LOGIN</b>\n If you are already register click here</string>
+    <string name="register_n">Register</string>
+    <string name="please_enter_correct_mobile_number_n10">Please enter correct mobile number</string>
+    <string name="register">Register</string>
+
+    <!--Others -->
+    <string name="or">OR</string>
+    <string name="expires_today">Expires Today</string>
+    <string name="multi_login">You are login from multiple devices.Please contact admin.</string>
+    <string name="premium_content_block">You are watching premium content from other Device.Logout from other device if you are facing issues.</string>
+    <string name="welcome">Welcome</string>
+    <string name="select_language">Select Language</string>
+    <string name="continue_lan">Continue</string>
+    <string name="more_details">More Details</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up_register">Sign Up/Register</string>
+    <string name="enter_mobile_number">Choose your 10 digits mobile number or put your other number without country code</string>
+
+    <!--New -->
+    <string name="gener">Geners</string>
+    <string name="edit">Edit</string>
+    <string name="click_here_to_vip_login">Click Here To VIP Login</string>
+    <string name="upload_profile">Upload Profile</string>
+    <string name="my_subscriptions">My Subscriptions</string>
+    <string name="vaild_till">Vaild Till</string>
+    <string name="help_faq">Help &amp; FAQs</string>
+    <string name="change">Change</string>
+    <string name="update_available">Update Available</string>
+    <string name="view_more">View More</string>
+    <string name="buy">Buy</string>
+    <string name="video_playing">Video already playing</string>
+    <string name="adding_review">Adding Review</string>
+    <string name="movie_subscriptions">Movie Subscription</string>
+    <string name="web_subscriptions">WebSeries Subscription</string>
+    <string name="data_msg">Your Video is Playing using Mobile data. सेटिंग बटन पर जा कर क्वालिटी कम करे</string>
+    <string name="internet_download_alert">Do not turn off the internet once the download starts, if the internet is turned off please delete(x) the file and download again</string>
+
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">Hindi</string>
+    <string name="hindi_hindi" translatable="false">हिन्दी </string>
+    <string name="marathi" translatable="false">Marathi</string>
+    <string name="marathi_marathi" translatable="false">मराठी</string>
+    <string name="punjabi" translatable="false">Punjabi</string>
+    <string name="punjabi_punjabi" translatable="false">ਪੰਜਾਬੀ</string>
+    <string name="tamil" translatable="false">Tamil</string>
+    <string name="tamil_tamil" translatable="false">தமிழ்</string>
+    <string name="telugu" translatable="false">Telugu</string>
+    <string name="telugu_telugu" translatable="false">తెలుగు</string>
+    <string name="kannada" translatable="false">Kannada</string>
+    <string name="kannada_kannada" translatable="false">ಕನ್ನಡ</string>
+    <string name="app_name" translatable="false">iDragonPro</string>
+    <string name="facebook_app_id" translatable="false">461430184592994</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb461430184592994</string>
+    <!--Live banner ads id -->
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-5360928960592802/3506928497</string>
+    <!--Live native ads id -->
+    <string name="admob_ad_native_id" translatable="false">ca-app-pub-5360928960592802/6580987854</string>
+    <string name="upi_payment" translatable="false">UPI Payment</string>
+    <string name="upi_payment_hi" translatable="false">(यूपीआई भुगतान)</string>
+    <string name="qr_scanner_click_here" translatable="false">QR Scanner click here</string>
+    <string name="bank_qr_scanner_click_here" translatable="false">Bank QR Scanner click here</string>
+    <string name="indian_international_payment" translatable="false">Indian &amp; International</string>
+    <string name="indian_international_payment_hi" translatable="false">(भारतीय &amp; अंतरराष्ट्रीय)</string>
+    <string name="qr_scanner_click_here_hi" translatable="false">क्यूआर स्कैनर</string>
+    <string name="instamojo_payment" translatable="false">Instamojo Payment</string>
+    <string name="instamojo_payment_hi" translatable="false">इंस्तामोजो पेमंट</string>
+    <string name="pakistan_nepal_bangladesh_user_click" translatable="false">Pakistan, Nepal &amp; Bangladesh User Click</string>
+    <string name="pakistan_nepal_bangladesh_user_click_hi" translatable="false">पाकिस्तान, नेपाल और बांग्लादेश उपयोगकर्ता भुगतान के लिए यहां क्लिक करें</string>
+    <string name="pay_on" translatable="false">Pay on :- 9987714307 इस नम्बर पर UPI से पेमेंट करे</string>
+    <string name="account_transfer" translatable="false">Account Transfer/खाते में जमा करे</string>
+    <string name="account_number" translatable="false">Account Number - 5345240494</string>
+    <string name="ifsc_code" translatable="false">IFSC Code - KKBK0000962</string>
+    <string name="micr_code" translatable="false">MICR Code - 400485017</string>
+    <string name="account_name" translatable="false">Account Name - Aeon Pictures</string>
+    <string name="email_id" translatable="false">Email ID - idragonglobal@gmail.com</string>
+    <string name="customer_care_no" translatable="false">Customer Care No. - 9321199867</string>
+    <string name="for_google_pay" translatable="false">For Google pay</string>
+    <string name="google_pay_upi_id" translatable="false">idragonmoviesapp@okicici</string>
+    <string name="for_phone_pay" translatable="false">For PhonePe</string>
+    <string name="phone_pay_upi_id" translatable="false">9987714307@axl</string>
+    <string name="phone_pay_upi_id_two" translatable="false">9987714307@ybl</string>
+    <string name="for_paytm" translatable="false">For Paytm</string>
+    <string name="paytm_upi_id" translatable="false">9987714307@paytm</string>
+
+    <string name="payment_share" translatable="false">भुगतान के बाद अपना नंबर और  रसीद 9321199867 पर व्हाट्सएप करें\nAfter payment WhatsApp your number &amp; receipt to 9321199867</string>
+    <string name="click_here_to_login_n" translatable="false">Click here to Login \n लॉग इन करने के लिए यहां क्लिक करें</string>
+
+    <string name="something_went_wrong" translatable="false">Something went wrong!!</string>
+    <string name="download_cancelled" translatable="false">Download task cancelled</string>
+    <string name="cancel_download" translatable="false">Cancel download</string>
+    <string name="download_noti_channel_name" translatable="false">idragon download</string>
+    <string name="download_noti_progress_channel_name" translatable="false">idragon download progress</string>
+    <string name="download_start" translatable="false">Starting download</string>
+    <string name="share_via" translatable="false">Share via…</string>
+    <string name="val_not_set" translatable="false">Not set</string>
+    <string name="download_location_title" translatable="false">Download location</string>
+    <string name="action_choose_folder" translatable="false">Choose folder</string>
+    <string name="download_already_running" translatable="false">A download is already running</string>
+    <string name="invalid_download_location" translatable="false">Invalid download location</string>
+
+    <string name="common_permission_alert" translatable="false">Authorization Alert</string>
+    <string name="common_permission_fail_hint" translatable="false">Authorization failed, please grant permission correctly</string>
+    <string name="common_permission_fail_assign_hint" translatable="false">Authorization failed, please grant %s correctly</string>
+    <string name="common_permission_manual_fail_hint" translatable="false">Failed to obtain permission, please grant permission manually</string>
+    <string name="common_permission_manual_assign_fail_hint" translatable="false">Failed to obtain permission, please grant %s manually</string>
+    <string name="common_permission_background_location_fail_hint" translatable="false">Failed to obtain background location permission,\nPlease select "Always Allow"</string>
+    <string name="common_permission_background_sensors_fail_hint" translatable="false">Failed to obtain background sensor permission,\nPlease select "Always Allow"</string>
+    <string name="common_permission_media_location_hint_fail" translatable="false">Failed to get media location permission\nPlease clear app data and try again</string>
+    <string name="common_permission_goto_setting_page" translatable="false">Goto Authorization</string>
+
+    <string name="common_permission_calendar" translatable="false">Calendar permission</string>
+    <string name="common_permission_camera" translatable="false">Camera permission</string>
+    <string name="common_permission_contacts" translatable="false">contacts permissions</string>
+    <string name="common_permission_location" translatable="false">Location permission</string>
+    <string name="common_permission_location_background" translatable="false">background location permission</string>
+    <string name="common_permission_wireless_devices" translatable="false">Nearby device permissions</string>
+    <string name="common_permission_microphone" translatable="false">Microphone permission</string>
+    <string name="common_permission_phone" translatable="false">Phone permission</string>
+    <string name="common_permission_call_log" translatable="false">Call log permission</string>
+    <string name="common_permission_sensors" translatable="false">Body sensor permissions</string>
+    <string name="common_permission_sensors_background" translatable="false">Background body sensor permission</string>
+    <string name="common_permission_activity_recognition_29" translatable="false">Fitness exercise permission</string>
+    <string name="common_permission_activity_recognition_30" translatable="false">Physical Activity Permission</string>
+    <string name="common_permission_media_location" translatable="false">Read media file location permission</string>
+    <string name="common_permission_sms" translatable="false">SMS permission</string>
+    <string name="common_permission_storage" translatable="false">Storage permission</string>
+    <string name="common_permission_post_notifications" translatable="false">Send notification permission</string>
+    <string name="common_permission_image_and_video" translatable="false">photo and video permissions</string>
+    <string name="common_permission_audio" translatable="false">Music and audio permissions</string>
+
+    <string name="common_permission_manage_storage" translatable="false">All file access permissions</string>
+    <string name="common_permission_install" translatable="false">Install app permissions</string>
+    <string name="common_permission_window" translatable="false">Floating window permission</string>
+    <string name="common_permission_setting" translatable="false">Modify system setting permission</string>
+    <string name="common_permission_notification" translatable="false">Notification permission</string>
+    <string name="common_permission_notification_listener" translatable="false">Notification bar listening permission</string>
+    <string name="common_permission_task" translatable="false">View usage permission</string>
+    <string name="common_permission_alarm" translatable="false">View alarm reminder permission</string>
+    <string name="common_permission_not_disturb" translatable="false">Do not disturb permission</string>
+    <string name="common_permission_ignore_battery" translatable="false">Ignore battery optimization permission</string>
+    <string name="common_permission_picture_in_picture" translatable="false">PIP permission</string>
+    <string name="common_permission_vpn" translatable="false">\tVPN\tPermission</string>
+    <string name="download_paused" translatable="false">download has been paused</string>
+    <string name="download_resumed" translatable="false">"download has been resumed "</string>
+
+    <string name="storage" translatable="false">Mobile Storage</string>
+    <string name="arrow" translatable="false">&#160;&#160;&#160;>&#160;&#160;&#160;&#160;</string>
+
+    <string name="frida_check_failure" translatable="false">You can not use this app as device contains frida server!</string>
+    <string name="developer_options_failure" translatable="false">Please disable Developer options</string>
+    <string name="debug_check_failure" translatable="false">You can not use this app in debug mode</string>
+    <string name="debug_options_failure" translatable="false">Please disable debug options</string>
+    <string name="emulator_check_failure" translatable="false">You can not use this app in emulator</string>
+    <string name="root_check_failure" translatable="false">You can not use this app in rooted device</string>
+    <string name="app_integrity_check_failure" translatable="false">You can not use app as Integrity check failed</string>
+
+
+    <string name="root_device_download_failure" translatable="false">Your phone is rooted, Please un-root it and use the app.</string>
+</resources>

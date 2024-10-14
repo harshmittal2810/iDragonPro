@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#fc1500</color>
+    <color name="colorRedLight">#D83325</color>
+    <color name="colorRed">#f80004</color>
+    <!--    <color name="colorNavyBlue">#010101</color>-->
+    <color name="colorNavyBlue">#161616</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhitiesGrey">#D3D3D3</color>
+    <color name="colorGrey">#D3D3D3</color>
+    <color name="black">#000000</color>
+    <color name="colorBackground">#3E1717</color>
+    <color name="black_overlay">#6D000000</color>
+    <color name="subs">#B9373535</color>
+    <color name="themered">#8DFC1500</color>
+    <color name="colorblue">#E6FF8B</color>
+    <color name="next_video_screen_background">#99282828</color>
+    <color name="hint_color">#C4C4C4</color>
+    <color name="login_yellow">#FFC737</color>
+    <color name="color_white_85_opacity">#D9FFFFFF</color>
+    <color name="color_white_65_opacity">#A6FFFFFF</color>
+    <color name="divider_color">#DCDCDC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Button_background">#B9373535</color>
+
+    <color name="primary_green">#00a69c</color>
+    <color name="accent_1">#5FC88F</color>
+    <color name="accent_2">#FF6464</color>
+    <color name="accent_3">#767DFF</color>
+
+    <color name="text_1">#1F1F39</color>
+    <color name="text_2">#23262F</color>
+    <color name="text_3">#4C5D77</color>
+    <color name="text_4">#777E90</color>
+    <color name="text_5">#B1B5C3</color>
+    <color name="text_6">#E6E8EC</color>
+    <color name="text_7">#F4F5F6</color>
+    <color name="text_8">#FCFCFD</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="primary">#CB0606</color>
+    <color name="primaryVariant">#CB0606</color>
+    <color name="text_color">#CB0606</color>
+    <color name="tint_color">#CB0606</color>
+    <color name="background_color">#CB0606</color>
+    <color name="grey">#d1d1d1</color>
+    <color name="hint_text_color">#808080</color>
+
+    <color name="selected_color_transparent">#88909090</color>
+    <color name="folder_color">#0099aa</color>
+    <color name="storage_progress_color">#0099aa</color>
+    <color name="fab_color">#0099aa</color>
+
+    <!--DAY NIGHT COLORS-->
+    <color name="background_color_day_night">#FFFFFF</color>
+    <color name="text_color_day_night">#FFFFFF</color>
+    <color name="text_color_day_night_1">#FFFFFF</color>
+</resources>

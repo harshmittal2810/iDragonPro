@@ -1,0 +1,258 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+
+android {
+    namespace 'com.idragonpro.andmagnus'
+    compileSdk 34
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.idragonpro.andmagnus"
+        minSdkVersion 24
+        targetSdkVersion 34
+
+        versionCode 104
+        versionName "2.3.15"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+        ndk {
+            abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+        }
+
+        buildConfigField("String", "KEYPASSWORD", KEYPASSWORD)
+        buildConfigField("String", "IVPASSWORD", IVPASSWORD)
+        buildConfigField("String", "ALGORITHM", ALGORITHM)
+        buildConfigField("String", "TRANSFORMATION", TRANSFORMATION)
+
+        buildConfigField("boolean", "LOGGING_ENABLED", "true")
+        buildConfigField("boolean", "DISABLE_LOG_WRITING", "false")
+        buildConfigField("boolean", "ENABLE_DEBUGGING_LOGS", "true")
+        buildConfigField("boolean", "DISABLE_SECURITY_CHECKS", "true")
+        buildConfigField("boolean", "NETWORK_LOGGING_ENABLED", "true")
+
+
+        externalNativeBuild {
+            cmake {
+                cppFlags("-std=c++14 -frtti -fexceptions")
+                arguments("-DANDROID_STL=c++_shared")
+            }
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+        release {
+            buildConfigField("boolean", "LOGGING_ENABLED", "true")
+            buildConfigField("boolean", "DISABLE_LOG_WRITING", "false")
+            buildConfigField("boolean", "ENABLE_DEBUGGING_LOGS", "true")
+            buildConfigField("boolean", "DISABLE_SECURITY_CHECKS", "false")
+            buildConfigField("boolean", "NETWORK_LOGGING_ENABLED", "true")
+
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        //noinspection DataBindingWithoutKapt
+        dataBinding true
+    }
+
+    packagingOptions {
+        jniLibs { useLegacyPackaging = true }
+        resources {
+            excludes += ['mozilla/public-suffix-list.txt',
+                         'META-INF/DEPENDENCIES',
+                         'META-INF/LICENSE',
+                         'META-INF/LICENSE.txt',
+                         'META-INF/license.txt',
+                         'META-INF/NOTICE',
+                         'META-INF/NOTICE.txt',
+                         'META-INF/notice.txt',
+                         'META-INF/ASL2.0',
+                         'META-INF/*.kotlin_module']
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        checkReleaseBuilds false
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    externalNativeBuild {
+        cmake.path = file("CMakeLists.txt")
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+            universalApk true
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':nativetemplates')
+
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.17.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.17.1'
+    implementation 'com.google.android.exoplayer:extension-ima:2.17.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.17.1'
+
+    implementation "androidx.activity:activity:1.2.0"
+    implementation "androidx.fragment:fragment:1.3.0"
+
+    implementation "androidx.core:core-ktx:1.13.1"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.annotation:annotation:1.7.1'
+    implementation 'androidx.exifinterface:exifinterface:1.3.7'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.browser:browser:1.8.0'
+    implementation 'androidx.mediarouter:mediarouter:1.0.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.github.skydoves:progressview:1.0.7'
+
+    implementation 'com.google.android.play:review:2.0.1'
+    implementation 'com.google.android.play:app-update:2.1.0'
+    implementation 'com.google.android.play:integrity:1.4.0'
+
+    //By Bushra: for google advertise
+    implementation 'com.danikula:videocache:2.7.1'
+
+    implementation platform('com.google.firebase:firebase-bom:33.1.2')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-crashlytics'
+
+    implementation 'com.google.android.gms:play-services-auth:21.2.0'
+    implementation 'com.google.android.gms:play-services-ads:23.2.0'
+    implementation 'com.google.android.gms:play-services-base:18.5.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.razorpay:checkout:1.6.38'
+    implementation 'org.apache.commons:commons-lang3:3.9'
+    implementation('org.apache.httpcomponents:httpmime:4.5.10') {
+        exclude module: 'httpclient'
+    }
+
+    //By Bushra: PayTM payment integration
+
+    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.5'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.12.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+
+    implementation 'com.google.mlkit:translate:17.0.2'
+
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.2'
+
+    implementation 'com.cashfree.pg:api:2.1.9'
+
+    // shape view
+    implementation 'io.github.florent37:shapeofview:1.4.7'
+
+    // intuit sdp/ssp
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation "com.airbnb.android:lottie:3.4.0"
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation 'com.github.GrenderG:Toasty:1.5.2'
+    implementation 'com.github.Marvel999:Android-Loading-Animation:1.0.0'
+    implementation 'androidx.fragment:fragment-ktx:1.5.6'
+    implementation 'com.scottyab:rootbeer-lib:0.0.8'
+
+    def arch_lifecycle_version = "2.4.0"
+    def work_version = "2.7.0"
+    def room_version = "2.4.0-alpha03"
+
+    //Download library
+    implementation 'com.karumi:dexter:6.2.2'
+
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
+
+    implementation 'com.github.getActivity:XXPermissions:16.2'
+
+//    implementation "com.github.yausername.youtubedl-android:library:$youtubedlAndroidVer"
+//    implementation "com.github.yausername.youtubedl-android:ffmpeg:$youtubedlAndroidVer"
+//    implementation "com.github.yausername.youtubedl-android:aria2c:$youtubedlAndroidVer"
+
+    implementation("io.github.junkfood02.youtubedl-android:library:0.16.0")
+    implementation("io.github.junkfood02.youtubedl-android:ffmpeg:0.16.0")
+    implementation("io.github.junkfood02.youtubedl-android:aria2c:0.16.0")
+
+    implementation "androidx.lifecycle:lifecycle-common-java8:$arch_lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$arch_lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$arch_lifecycle_version"
+
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    androidTestImplementation 'junit:junit:4.13.2'
+}

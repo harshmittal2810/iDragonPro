@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNavyBlue"
+    android:fillViewport="true"
+    tools:context=".activities.NewPaymentActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/custom_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="@dimen/margin_15" />
+
+        <!-- Header  -->
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:id="@+id/upiPaymentCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/colorWhite"
+            android:elevation="@dimen/_5sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actionBar"
+            app:shape_roundRect_bottomLeftRadius="11dp"
+            app:shape_roundRect_bottomRightRadius="11dp"
+            app:shape_roundRect_topLeftRadius="11dp"
+            app:shape_roundRect_topRightRadius="11dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/upiPaymentConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/multi_color_bg_frame"
+                android:paddingBottom="@dimen/_11sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/upiPaymentTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"
+                    android:text="@string/upi_payment"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/upiPaymentHindiTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"
+                    android:text="@string/upi_payment_hi"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/upiPaymentTextView" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/payment_send"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/payment_share"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_8sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/upiPaymentHindiTextView" />
+
+                <ImageView
+                    android:id="@+id/imageViewGpay"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginBottom="24dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/google_pay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/upiPaymentHindiTextView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imageViewPhonePay"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/phone_pe"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imageViewGpay"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imageViewPaytmUpi"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_marginBottom="24dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/paytm_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewUpiPaymentFrontArrow"
+                    app:layout_constraintStart_toEndOf="@id/imageViewPhonePay"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imageViewUpiPaymentFrontArrow"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginBottom="24dp"
+                    android:src="@drawable/right_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imageViewPaytmUpi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <LinearLayout
+            android:id="@+id/upiPaymentCardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@color/colorNavyBlue"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actionBar">
+
+            <include
+                layout="@layout/upi_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/actionBar" />
+        </LinearLayout>
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:id="@+id/razorPayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/colorWhite"
+            android:elevation="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actionBar"
+            app:shape_roundRect_bottomLeftRadius="11dp"
+            app:shape_roundRect_bottomRightRadius="11dp"
+            app:shape_roundRect_topLeftRadius="11dp"
+            app:shape_roundRect_topRightRadius="11dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/razorPayConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/multi_color_bg_frame"
+                android:paddingBottom="@dimen/_11sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/indianInternationalPaymentTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/indian_international_payment"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_13"
+                    app:fontFamily="@font/lato"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewFrontArrow"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewRazorPay"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/indianInternationalPaymentHindiTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/indian_international_payment_hi"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_13"
+                    app:fontFamily="@font/lato"
+                    app:layout_constraintEnd_toStartOf="@+id/imageViewFrontArrow"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewRazorPay"
+                    app:layout_constraintTop_toBottomOf="@+id/indianInternationalPaymentTextView" />
+
+                <ImageView
+                    android:id="@+id/imageViewRazorPay"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/rounded_corner_white_shape_gradient"
+                    android:padding="@dimen/_5sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/all_wallet"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/indianInternationalPaymentTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imageViewFrontArrow"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/right_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/indianInternationalPaymentTextView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:id="@+id/cashFreeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/colorWhite"
+            android:elevation="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/razorPayLayout"
+            app:shape_roundRect_bottomLeftRadius="11dp"
+            app:shape_roundRect_bottomRightRadius="11dp"
+            app:shape_roundRect_topLeftRadius="11dp"
+            app:shape_roundRect_topRightRadius="11dp"
+            tools:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cashFreeConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/multi_color_bg_frame"
+                android:paddingBottom="@dimen/_11sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cashFreeTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/indian_international_payment"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewCashFreeFrontArrow"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewCashFree"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cashFreeHindiTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/indian_international_payment_hi"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewCashFreeFrontArrow"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewCashFree"
+                    app:layout_constraintTop_toBottomOf="@+id/cashFreeTextView" />
+
+                <ImageView
+                    android:id="@+id/imageViewCashFree"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/rounded_corner_white_shape_gradient"
+                    android:contentDescription="TODO"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_cashfree"
+                    app:layout_constraintBottom_toBottomOf="@+id/cashFreeHindiTextView"
+                    app:layout_constraintEnd_toStartOf="@id/cashFreeTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cashFreeTextView"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imageViewCashFreeFrontArrow"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/right_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cashFreeTextView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <LinearLayout
+            android:id="@+id/bank_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@color/colorNavyBlue"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cashFreeLayout">
+
+            <include
+                layout="@layout/bank_qr_ui"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@color/colorNavyBlue"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bank_qr_code">
+
+            <include
+                layout="@layout/qr_ui"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:id="@+id/instamojoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/colorWhite"
+            android:elevation="@dimen/_5sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/qr_code"
+            app:shape_roundRect_bottomLeftRadius="11dp"
+            app:shape_roundRect_bottomRightRadius="11dp"
+            app:shape_roundRect_topLeftRadius="11dp"
+            app:shape_roundRect_topRightRadius="11dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/instamojoConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/multi_color_bg_frame"
+                android:paddingBottom="@dimen/_11sdp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/instamojoTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/instamojo_payment"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewInstamojoArrow"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewInstamojo"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/instamojoHindiTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/instamojo_payment_hi"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@+id/imageViewInstamojoArrow"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewInstamojo"
+                    app:layout_constraintTop_toBottomOf="@+id/instamojoTextView" />
+
+                <ImageView
+                    android:id="@+id/imageViewInstamojo"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/rounded_corner_white_shape_gradient"
+                    android:contentDescription="TODO"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_instamojo"
+                    app:layout_constraintBottom_toBottomOf="@+id/instamojoHindiTextView"
+                    app:layout_constraintEnd_toStartOf="@id/instamojoTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/instamojoTextView"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imageViewInstamojoArrow"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/right_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/instamojoTextView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <io.github.florent37.shapeofview.shapes.RoundRectView
+            android:id="@+id/lastLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/colorWhite"
+            android:elevation="@dimen/_5sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/instamojoLayout"
+            app:shape_roundRect_bottomLeftRadius="11dp"
+            app:shape_roundRect_bottomRightRadius="11dp"
+            app:shape_roundRect_topLeftRadius="11dp"
+            app:shape_roundRect_topRightRadius="11dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/pakistanNepalBangladeshPaymentConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/black_layout_bg"
+                android:paddingBottom="@dimen/_11sdp"
+                android:visibility="invisible">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/topTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/pakistan_nepal_bangladesh_user_click"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewLastLayoutArrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/bottomTextview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/pakistan_nepal_bangladesh_user_click_hi"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewLastLayoutArrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topTextView" />
+
+                <ImageView
+                    android:id="@+id/imageViewLastLayoutArrow"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/right_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/topTextView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/payOnTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/pay_on"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:fontFamily="@font/lato_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastLayout"
+            app:layout_goneMarginTop="90dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/accountTransferTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/account_transfer"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_13"
+            app:fontFamily="@font/lato"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/payOnTextview" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/accountNumberTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/account_number"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_13"
+            app:fontFamily="@font/lato"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountTransferTextview" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ifscCodeTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/ifsc_code"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_13"
+            app:fontFamily="@font/lato"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountNumberTextview" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/micrCodeTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/micr_code"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_13"
+            app:fontFamily="@font/lato"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ifscCodeTextview" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/accountNameTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/account_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_13"
+            app:fontFamily="@font/lato"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/micrCodeTextview" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/emailIdTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/email_id"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_13"
+            app:fontFamily="@font/lato"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountNameTextview" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/customerCareNumberTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/customer_care_no"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_13"
+            app:fontFamily="@font/lato"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailIdTextview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="100dp"
+                android:contentDescription="TODO"
+                app:fabCustomSize="45dp"
+                app:fontFamily="@font/lato"
+                app:srcCompat="@drawable/ic_media_stop_dark"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="100dp"
+                android:contentDescription="TODO"
+                app:fabCustomSize="45dp"
+                app:srcCompat="@drawable/exo_icon_repeat_all"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="100dp"
+                android:contentDescription="TODO"
+                app:fabCustomSize="45dp"
+                app:srcCompat="@drawable/exo_icon_pause"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="98dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/volume"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <ImageView
+                android:id="@+id/img_help"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="-20dp"
+                android:layout_toStartOf="@+id/fab"
+                android:contentDescription="TODO"
+                android:src="@drawable/girl_help"
+                android:visibility="gone"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/img_help"
+                android:layout_alignTop="@+id/img_help"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="30dp"
+                android:background="#99282828"
+                android:text="@string/help"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:fontFamily="@font/lato" />
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/img_help"
+                android:layout_alignTop="@+id/img_help"
+                android:contentDescription="TODO"
+                android:src="@drawable/cancel"
+                android:visibility="gone"
+                tools:ignore="ContentDescription,HardcodedText" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
